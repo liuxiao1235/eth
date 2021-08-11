@@ -1,0 +1,8 @@
+use huigan\EthSign;
+
+$EthSign = new EthSign();
+$sign="0xb319edba9d9d8c12a83d3a6e2a072fa5813dd8a5e9460ac3a475ab40a9988ddd059eed15f8c748a2b18c303b2a290a40c464b0a72274dfe1a96820bb02617b4f1b";
+$msg="刘笑";
+$address="0xCfF00aD74fDD1a995fF4b389a623F874E6c2CEc7";
+
+$succ=$EthSign->verify($msg,$sign,$address);
